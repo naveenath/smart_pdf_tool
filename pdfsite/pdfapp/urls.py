@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('merge/', views.merge_pdfs, name='merge_pdfs'),
 
 ]
