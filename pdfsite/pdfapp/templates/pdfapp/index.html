@@ -42,7 +42,8 @@
     </ul>
 
     <div class="tab-content" id="pdfTabContent">
-        <div class="tab-pane fade show active" id="merge" role="tabpanel">
+      <!-- Merge Tab -->
+      <div class="tab-pane fade show active" id="merge" role="tabpanel">
         <form method="POST" action="{% url 'merge_pdfs' %}" enctype="multipart/form-data">
           {% csrf_token %}
           <div class="mb-3">
@@ -52,7 +53,27 @@
           <button type="submit" class="btn btn-primary w-100">Merge PDFs</button>
         </form>
       </div>
-      
+
+      <!-- Split Tab -->
+      <div class="tab-pane fade" id="split" role="tabpanel">
+        <form method="POST" action="{% url 'split_pdf' %}" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label class="form-label">Select PDF File to Split:</label>
+            <input type="file" class="form-control" name="pdf" accept="application/pdf" required>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label class="form-label">Start Page:</label>
+              <input type="number" class="form-control" name="start" min="1" required>
+            </div>
+            <div class="col">
+              <label class="form-label">End Page:</label>
+              <input type="number" class="form-control" name="end" min="1" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Split PDF</button>
+        </form>
       </div>
     </div>
   </div>

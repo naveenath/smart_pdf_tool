@@ -29,3 +29,24 @@ def merge_pdfs(request):
             writer.write(f)
 
         return FileResponse(open(output_path, 'rb'), as_attachment=True, filename='merged.pdf')
+def split_pdf(request):
+    if request.method == 'POST':
+        f = request.FILES['pdf']
+        start = int(request.POST['start']) - 1
+        end = int(request.POST['end'])
+
+        fs = FileSystemStorage()
+        filename = fs.save(f.name, f)
+        file_path = fs.path(filename)
+
+        reader = PdfReader(file_path)
+        writer = PdfWriter()
+
+        for page in range(start, end):
+            writer.add_page(reader.pages[page])
+
+        output_path = fs.path('split.pdf')
+        with open(output_path, 'wb') as out:
+            writer.write(out)
+
+        return FileResponse(open(output_path, 'rb'), as_attachment=True, filename='split.pdf')
