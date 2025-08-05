@@ -1,0 +1,52 @@
+ 
+ 
+ 
+BNL-XXXXX-YYYY-CP 
+ 
+ 
+ 
+ 
+ 
+ 
+Fast Neutron Covariances for Evaluated Data Files 
+ 
+M.Herman*1, P.Oblozinsky1, D.Rochman1, T.Kawano2, L.Leal3   
+ 
+1Brookhaven National Laboratory, Upton, NY 11973, U.S.A. 
+2 Los Alamos National Laboratory, Los Alamos, NM 87545, U.S.A. 
+3 Oak Ridge National Laboratory, Oak Ridge, TN 37831, U.S.A 
+ 
+Presented at PHYSOR-2006 
+Vancouver, BC, Canada 
+American Nuclear Society's Topical Meeting on Reactor Physics Organized and 
+hosted by the Canadian Nuclear Society 
+2006 September 10-14 
+ 
+ 
+May 2006 
+ 
+ 
+ 
+ 
+ 
+Energy Sciences & Technology Department 
+National Nuclear Data Center 
+Brookhaven National Laboratory 
+P.O. Box 5000 
+Upton, NY 11973-5000 
+www.bnl.gov 
+ 
+ 
+ 
+ 
+Notice: This manuscript has been authored by employees of Brookhaven Science Associates, LLC under 
+Contract No. DE-AC02-98CH10886 with the U.S. Department of Energy. The publisher by accepting the 
+manuscript for publication acknowledges that the United States Government retains a non-exclusive, paid-up, 
+irrevocable, world-wide license to publish or reproduce the published form of this manuscript, or allow others 
+to do so, for United States Government purposes. 
+ 
+This preprint is intended for publication in a journal or proceedings.  Since changes may be made before 
+publication, it may not be cited or reproduced without the author’s permission. 
+
+--- Page Break ---
+
